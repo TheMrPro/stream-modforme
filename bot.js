@@ -1,6 +1,14 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+client.on ("guildBotAdd", member => {
+
+  var channel = member.guild.channels.find("name", "❅║▪ʹchat．");
+  channel.send(`**♯·Welcome ``To`` Relax,Network. :fire: :two_hearts: 
+ __ Have Great,Time :rose:__**`)
+ 
+           
+          })
 
 const adminprefix = "-";
 const devs = ['454724311194927114'];
